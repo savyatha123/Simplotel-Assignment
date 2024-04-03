@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* for Main Container */
+#container {
+  height: auto;
+  margin: auto;
+  border: 0px solid blue;
+}
+
+/* for Top Container */
+#container > #top-container {
+  border: 0px solid red;
+  height: 60px;
+  align-items: center;
+  margin: auto;
+}
+
+/* for Navbar */
+#container > #top-container > .navbar {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 50px;
+  align-items: center;
+  border: 0px solid rgb(0, 255, 187);
+  justify-content: space-between;
+}
+
+#container > #top-container > .navbar > .navbar-left {
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+  border: 0px solid rgb(0, 255, 26);
+  justify-content: space-around;
+}
+
+#container > #top-container > .navbar > .navbar-right {
+  width: 10%;
+  display: flex;
+  gap: 15px;
+  border: 0px solid rgb(255, 157, 0);
+}
+
+#container > #top-container > .navbar > .navbar-right > div {
+  font-size: 27px;
+  border: 0px solid rgb(255, 157, 0);
+}
+
+#container > #top-container > .navbar > .navbar-left h3 {
+  font-family: "YourFontFamily", sans-serif;
+  font-size: 21px;
+  color: black;
+  font-weight: normal;
+  font-style: unset;
+}
+
+/* for the hamburger menu */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu :hover {
+  cursor: pointer;
+}
+
+.hamburger-menu > .barmenu {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 3.2px 0;
+}
+
+/* For Mid Container */
+#mid-container {
+  position: relative;
+}
+
+#mid-container .background-top-img-first {
+  height: 53vw;
+  overflow: hidden;
+}
+
+#mid-container .background-top-img-first img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+#mid-container .background-top-img-second {
+  position: absolute;
+  left: 5.6%;
+  top: 23%;
+  background-color: rgba(244, 98, 122, 0.6);
+  padding: 50px;
+  width: 40%;
+  z-index: 1;
+}
+
+#mid-container .background-top-img-second h1 {
+  font-size: 3vw;
+  color: white;
+  padding-bottom: 10px;
+  font-family: "YourFontFamily", sans-serif;
+  font-style: unset;
+}
+
+#mid-container .background-top-img-second p {
+  font-size: 1.2vw;
+  font-family: "YourFontFamily", sans-serif;
+  font-style: unset;
+  color: white;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+#mid-container .background-bottom {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  height: 7.8vw;
+  background: linear-gradient(to left, #ffe148, #ed59e1);
+  top:86%;
+}
+/* for Bottom Container */
+/* child 1 */
+#container > #bottom-container {
+  height: auto;
+  border: 0px solid rgb(218, 110, 32);
+   margin-top: 0.5%;
+  background-image: linear-gradient(to left, #ffe148, #ed59e1);
+}
+
+#container > #bottom-container > div > h1 {
+  text-align: center;
+  color: white;
+  font-family: "YourFontFamily", sans-serif;
+  font-style: unset;
+  font-size: 55px;
+  border: 0px solid goldenrod;
+}
+
+/* child 2 */
+#container > #bottom-container > div:nth-child(2) {
+  border: 0px solid rgb(255, 145, 0);
+  margin-top: 70px;
+  width: 100%;
+}
+
+#container > #bottom-container > div:nth-child(2) > div {
+  border: 0px solid rgb(0, 255, 17);
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#container > #bottom-container > div:nth-child(2) > div > div {
+  width: 26.6%;
+  height: 400px;
+  border: 0px solid #b259ed;
+}
+
+/* child 2 cards */
+#container .cards {
+  padding: 7%;
+  height: 383px;
+  border: 0px solid forestgreen;
+  background-color: white;
+  border-start-end-radius: 17%;
+  border-end-start-radius: 17%;
+}
+
+#container .cards > div {
+  text-align: center;
+  font-family: "YourFontFamily", sans-serif;
+  font-style: unset;
+}
+
+#container .cards > div > p {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+#container .cards > div > h3 {
+  font-size: 22px;
+}
+
+#container .cards > div > img {
+  border-start-end-radius: 19%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#container .cards > div:nth-child(2) {
+  padding-top: 20px;
+}
+
+/* child 3 */
+#container > #bottom-container > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: auto;
+  height: 100px;
+  margin-top: 90px;
+  padding-bottom: 80px;
+  border: 0px solid firebrick;
+}
+
+#container > #bottom-container > div:nth-child(3) > button {
+  align-self: center;
+  width: 12.6rem;
+  height: 4.2rem;
+  color: black;
+  font-size: 22px;
+  font-family: "YourFontFamily", sans-serif;
+  font-style: unset;
+  font-weight: bold;
+  border: none;
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Media Query for Tablets */
+@media (min-width: 761px) and (max-width: 1000px) {
+  /* for Top Container */
+  #container > #top-container > .navbar > .navbar-left {
+    width: 80%;
+    padding-left: 13%;
+    margin-left: 0;
+  }
+
+  #container > #top-container > .navbar > .navbar-right {
+    width: 10%;
+    margin-left: 0;
+    padding-left: 5%;
+    padding-right: 3%;
+    justify-content: flex-end;
+  }
+
+  #container > #top-container > .navbar > .navbar-left h3 {
+    font-size: 20px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  #mid-container .background-top-img-second h1 {
+    font-size: 3.5vw;
+    color: white;
+    padding-bottom: 8px;
+    font-family: "YourFontFamily", sans-serif;
+    font-style: unset;
+  }
+  
+  #mid-container .background-top-img-second p {
+    font-size: 1.55vw;
+    font-family: "YourFontFamily", sans-serif;
+    font-style: unset;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: normal;
+  }
+
+  #mid-container .background-top-img-first {
+    height: 68vw;
+    overflow: hidden;
+  }
+  
+  #mid-container .background-top-img-first img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  #mid-container .background-bottom {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    height: 7.8vw;
+    background: linear-gradient(to left, #ffe148, #ed59e1);
+    top:88.5%;
+  }
+  /* for Bottom Container */
+
+  #container > #bottom-container {
+  height: auto;
+  border: 0px solid rgb(218, 110, 32);
+  background-image: linear-gradient(to left, #ffe148, #ed59e1);
+}
+  #container > #bottom-container > div:nth-child(2) {
+    border: 0px solid rgb(255, 145, 0);
+    margin-top: 70px;
+  }
+
+  #container > #bottom-container > div:nth-child(2) > div {
+    border: 0px solid rgb(0, 255, 17);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: auto;
+  }
+
+  #container > #bottom-container > div:nth-child(2) > div > div {
+    width: 70%;
+    height: auto;
+    border: 0px solid #b259ed;
+  }
+
+  #container .cards {
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 0px solid forestgreen;
+  }
+
+  #container .cards > div {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #container .cards > div > img {
+    border-start-end-radius: 20%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media  (max-width: 760px) {
+  /* for Top Container */
+  #container > #top-container > .navbar > .navbar-left {
+    display: none;
+  }
+
+  #container > #top-container > .navbar > .navbar-right {
+    margin-right: 5%;
+    justify-content: flex-end;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    margin-left: 5%;
+  }
+  #mid-container .background-top-img-first {
+    height: 80vw;
+    overflow: hidden;
+  }
+  
+  #mid-container .background-top-img-first img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  #mid-container .background-bottom {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    height: 7.8vw;
+    background: linear-gradient(to left, #ffe148, #ed59e1);
+    top:91%;
+  }
+  /* for Mid Container */
+  #container
+    > #mid-container
+    > .background-container
+    > .background-top-img-first {
+    height: 70%;
+  }
+
+  #container
+    > #mid-container
+    > .background-container
+    > .background-top-img-second {
+    width: 60%;
+    height: auto;
+    padding: 15px;
+    left: 10%;
+    top: 15%;
+    opacity: 0.6;
+  }
+  #mid-container .background-top-img-second {
+    position: absolute;
+    left: 14.6%;
+    top: 20%;
+    background-color: rgba(244, 98, 122, 0.6);
+    padding: 30px;
+    width: 50%;
+    z-index: 1;
+  } 
+
+  #mid-container .background-top-img-second h1 {
+    font-size: 4.2vw;
+    color: white;
+    padding-bottom: 10px;
+    font-family: "YourFontFamily", sans-serif;
+    font-style: unset;
+  }
+  
+  #mid-container .background-top-img-second p {
+    font-size: 1.7vw;
+    font-family: "YourFontFamily", sans-serif;
+    font-style: unset;
+    color: white;
+    padding-bottom: 10px;
+    font-weight: normal;
+  }
+  #container
+    > #mid-container
+    > .background-container
+    > .background-top-img-second
+    > h1 {
+    font-size: 21px;
+    padding-bottom: 5px;
+  }
+
+  #container
+    > #mid-container
+    > .background-container
+    > .background-top-img-second
+    > p {
+    font-size: 12px;
+  }
+
+  #container
+    > #mid-container
+    > .background-container
+    > .background-bottom
+    > div {
+    background-image: linear-gradient(to left, #ffe148, #ed59e1);
+  }
+
+  #container
+    > #mid-container
+    > .background-container
+    > .background-top-img-second {
+    background-color: rgb(244, 98, 122, 1);
+  }
+
+  /* for Bottom Container */
+  
+  #container > #bottom-container {
+    height: auto;
+    border: 0px solid rgb(218, 110, 32);
+    margin-top: 13px;
+    background-image: linear-gradient(to left, #ffe148, #ed59e1);
+  }
+
+  #container > #bottom-container > div > h1 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    border: 0px solid goldenrod;
+  }
+
+  #container > #bottom-container > div:nth-child(2) {
+    border: 0px solid rgb(255, 145, 0);
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  #container > #bottom-container > div:nth-child(2) > div {
+    border: 0px solid rgb(0, 255, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  #container > #bottom-container > div:nth-child(2) > div > div {
+    width: 70%;
+    height: auto;
+    border: 0px solid #b259ed;
+  }
+
+  #container .cards {
+    padding: 7%;
+    height: auto;
+    border: 0px solid forestgreen;
+    margin-bottom: 30px;
+    background-color: white;
+    border-start-end-radius: 20%;
+    border-end-start-radius: 20%;
+  }
+
+  #container > #bottom-container > div:nth-child(3) {
+    margin-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  #container .cards > div {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #container .cards > div > p {
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
+  #container .cards > div > img {
+    border-start-end-radius: 20%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  #container > #bottom-container > div:nth-child(3) > button {
+    width: 9.6rem;
+  }
+}
